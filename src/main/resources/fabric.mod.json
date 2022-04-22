@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "lib_hand",
+  "version": "0.1.0",
+
+  "name": "Ori's Hand Library",
+  "description": "This mod provides new block tags to permit or forbid the harvesting of a block without an appropriate tool. For example, to allow players to harvest stone by hand, add minecraft:stone to the tag hand:permitted. To prevent players from harvesting logs, add #minecraft:logs to the tag hand:forbidden.",
+  "authors": [
+    "Ori Sky"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ori-sky/mc-lib-hand",
+    "sources": "https://github.com/ori-sky/mc-lib-hand"
+  },
+
+  "license": "AGPL-3.0-or-later",
+  "icon": "assets/lib_hand/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mx.ori.lib.hand.LibHandMod"
+    ]
+  },
+  "mixins": [
+    "lib_hand.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
